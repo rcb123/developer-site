@@ -62,8 +62,6 @@
 	}
 
 	.project-card img {
-		object-fit: contain;
-		width: 100%;
 		border-radius: 0.4rem;
 	}
 
