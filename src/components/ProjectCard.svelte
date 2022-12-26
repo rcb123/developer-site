@@ -1,9 +1,19 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
+	import project1 from '$images/project1.jpg';
+	import project2 from '$images/project2.jpg';
+	import project3 from '$images/project3.jpg';
+
 	export let image = '';
 	export let title = '';
 	export let description = '';
 	export let projectPage = '';
 	export let githubLink = '';
+
+	let dummy = project1 + project2 + project3;
+
+	let src: string;
 
 	let onClick: (context: any) => void;
 
@@ -15,19 +25,29 @@
 			window.open(githubLink, '_blank');
 		}
 	};
+
+	onMount(() => {
+		src = eval(image);
+	});
 </script>
 
-<div class="project-card">
-	<img src={image} alt={title} />
-	<div class="info">
-		<h2>{title}</h2>
-		<p>{description}</p>
+<!-- Essentially, Svelte (or Vite in this case only wants to actually package assets that actually get used,
+	so a dummy statement is used to trick it into importing the files properly.
+	This is caused by the 'src = eval(image)' statement which the compiler doesn't realize uses all the images -->
+<p style:position="absolute" style:opacity="0">{dummy}</p>
+{#if src}
+	<div class="project-card">
+		<img {src} alt={title} />
+		<div class="info">
+			<h2>{title}</h2>
+			<p>{description}</p>
+		</div>
+		{#if projectPage}
+			<button class="cta" on:click={() => onClick('project')}> View Project in Action </button>
+		{/if}
+		<button class="cta" on:click={() => onClick('github')}> View Source Code </button>
 	</div>
-	{#if projectPage !== '#' && projectPage !== ''}
-		<button class="cta" on:click={() => onClick('project')}> View Project in Action </button>
-	{/if}
-	<button class="cta" on:click={() => onClick('github')}> View Source Code </button>
-</div>
+{/if}
 
 <style>
 	.project-card {

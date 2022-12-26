@@ -1,5 +1,5 @@
 <script>
-	import profile from '../../static/images/profile.jpg';
+	import profile from './profile.jpg';
 </script>
 
 <section class="about">

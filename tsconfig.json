@@ -8,7 +8,15 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
-		"strict": true
+		"strict": true,
+		"baseUrl": ".",
+		"paths": {
+			"$root/*": ["./src/*"],
+			"$components/*": ["./src/components/*"],
+			"$images/*": ["./src/static/images/*"],
+			"$backgrounds/*": ["./src/static/images/weather/backgrounds/*"],
+			"$icons/*": ["./src/static/images/weather/icons/*"]
+		}
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//

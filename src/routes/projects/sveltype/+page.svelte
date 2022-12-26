@@ -1,5 +1,5 @@
 <script>
-	import TypingGame from '../../../components/TypingGame.svelte';
+	import TypingGame from '$components/TypingGame.svelte';
 </script>
 
 <div class="layout">
