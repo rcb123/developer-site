@@ -4,7 +4,7 @@ import { json } from '@sveltejs/kit';
 import 'dotenv/config'
 
 export const GET = async ({ url }: any) => {
-    const apiKey = process.env.API_KEY;
+    const apiKey = process.env.WEATHER_API_KEY;
     const cityName = url.searchParams.get('city');
     const stateCode = url.searchParams.get('state');
     const countryCode = 'US';
