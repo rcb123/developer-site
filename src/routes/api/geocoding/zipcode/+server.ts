@@ -1,6 +1,8 @@
 import fetch from 'isomorphic-fetch';
 import { json } from '@sveltejs/kit';
 
+import 'dotenv/config'
+
 export const GET = async ({ url }: any) => {
     const apiKey = process.env.API_KEY;
     const zipcode = url.searchParams.get('zip');
