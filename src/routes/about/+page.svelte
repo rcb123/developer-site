@@ -2,6 +2,10 @@
 	import profile from './profile.jpg';
 </script>
 
+<svelte:head>
+	<title>About | Reza Banankhah</title>
+</svelte:head>
+
 <section class="about">
 	<div class="image">
 		<img src={profile} alt="Reza Banankhah" />
@@ -20,6 +24,10 @@
 			new opportunities to grow and learn, and I am excited to see where my career as a developer
 			takes me.
 		</p>
+		<!--
+			Connect with me on LinkedIn to learn more about my professional experience and skills, as well as my goals and aspirations as a developer.
+			View my open source projects and contributions on GitHub to get a sense of my coding style and abilities.
+		-->
 	</div>
 </section>
 

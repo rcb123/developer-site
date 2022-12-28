@@ -31,7 +31,7 @@
 	});
 </script>
 
-<!-- Essentially, Svelte (or Vite in this case only wants to actually package assets that actually get used,
+<!-- Essentially, Svelte (or Vite in this case only) wants to actually package assets that actually get used,
 	so a dummy statement is used to trick it into importing the files properly.
 	This is caused by the 'src = eval(image)' statement which the compiler doesn't realize uses all the images -->
 <p style:position="absolute" style:opacity="0">{dummy}</p>

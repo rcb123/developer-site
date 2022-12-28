@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import Icon from '$components/Icon.svelte'
 	import 'iconify-icon';
 
 	let handleNavToggle: () => void;
@@ -34,20 +35,12 @@
 				<a href="/projects" on:click={handleNavToggle}>PROJECTS</a>
 			</div>
 			<div id="nav-social-section" class="nav-section">
-				<a href="https://github.com/rcb123" target="_blank" rel="noreferrer">
-					<iconify-icon icon="mdi:github" />
-				</a>
-				<a href="https://www.linkedin.com/in/rbanankhah/" target="_blank" rel="noreferrer">
-					<iconify-icon icon="mdi:linkedin" />
-				</a>
-				<a href="mailto:banankha@usc.edu">
-					<iconify-icon icon="mdi:email" />
-				</a>
+				<Icon icon='github' />
+				<Icon icon='linkedin' />
+				<Icon icon='mail' />
 				<!--
-        <a href="#">
-          <Fa icon="fa-brands fa-instagram"></i>
-        </a> 
-        -->
+				<Icon icon='instagram' />
+        		-->
 			</div>
 			<div id="nav-contact-section" class="nav-section">
 				<a href="/contact" on:click={handleNavToggle}>CONTACT</a>
