@@ -1,49 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 :root {
+	/* Light Theme */
+	--background-color: #fff;
+	--border-color: #3c3c3c;
+	--highlight-color: #c2c9d6;
+	--text-color: #323437;
 
---background-color: #060b19;
---border-color: #ffffff1a;
---highlight-color: #7e57c2;
+	/* Dark Theme */
+	--background-color-dark: #060b19;
+	--border-color-dark: #ffffff1a;
+	--highlight-color-dark: #7e57c2;
+	--text-color-dark: #f9fafb;
 
---text-color: #F9FAFB;
+	--primary: #ca4754;
+	--fg-100: #f9fafb;
+	--fg-200: #c2c9d6;
+	--bg-100: #323437;
 
-/*
---background-color: #EAEAEA;
---border-color: #3C3C3C;
---highlight-color: #C2C9D6
-
---text-color: #F9FAFB
-
-*/
-
---primary: #ca4754;
---fg-100: #f9fafb;
---fg-200: #c2c9d6;
---bg-100: #323437;
-
-/*
-Color Palette	                Color 1	  Color 2   Highlight Color
-Soft black and cream	        #3A3A3A	  #F7F7F7   #FFC0CB
-Charcoal and soft white	      #3C3C3C	  #F5F5F5   #ADD8E6
-Dark grey and off-white	      #303030	  #F8F8F8   #FFA07A
-Light grey and antique white	#D3D3D3	  #FAEBD7   #90EE90
-Medium grey and pearl	        #848484	  #EAEAEA   #DDA0DD
-*/
+	/*
+    Possible Color Palettes	        Color 1	  Color 2   Highlight Color
+    Soft black and cream	        #3A3A3A	  #F7F7F7   #FFC0CB
+    Charcoal and soft white	        #3C3C3C	  #F5F5F5   #ADD8E6
+    Dark grey and off-white	        #303030	  #F8F8F8   #FFA07A
+    Light grey and antique white	#D3D3D3	  #FAEBD7   #90EE90
+    Medium grey and pearl	        #848484	  #EAEAEA   #DDA0DD
+    */
 }
 
 body {
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0px;
+	background-color: var(--background-color);
+	display: block;
+	margin: 0;
 }
 
 h1,
@@ -55,21 +51,20 @@ span,
 section,
 label,
 li {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    color: var(--text-color);
-    margin: 0px;
+	font-weight: 400;
+	color: var(--text-color);
+	margin: 0px;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover {
-    color: var(--highlight-color);
+	color: var(--highlight-color);
 }
 
 main {
-    flex-grow: 1;
-    overflow: hidden;
+	flex-grow: 1;
+	overflow: hidden;
 }

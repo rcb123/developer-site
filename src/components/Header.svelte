@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Icon from '$components/Icon.svelte'
+	import Icon from '$components/Icon.svelte';
 	import 'iconify-icon';
 
 	let handleNavToggle: () => void;
@@ -27,23 +27,26 @@
 		<div id="nav-logo-section" class="nav-section">
 			<a href="/">
 				<iconify-icon icon="mdi:code-braces" />
+				<p>Reza Banankhah</p>
 			</a>
 		</div>
 		<div id="nav-mobile-section">
 			<div id="nav-link-section" class="nav-section">
-				<a href="/about" on:click={handleNavToggle}>ABOUT</a>
-				<a href="/projects" on:click={handleNavToggle}>PROJECTS</a>
+				<a href="/projects" on:click={handleNavToggle}>Projects</a>
+				<a href="https://drive.google.com/file/d/1eMY_IuJ7Vmqy2tWJpmsUqIvh5pM14euP/view?usp=share_link" on:click={handleNavToggle}>Resume</a>
+				<a href="/about" on:click={handleNavToggle}>About</a>
 			</div>
 			<div id="nav-social-section" class="nav-section">
-				<Icon icon='github' />
-				<Icon icon='linkedin' />
-				<Icon icon='mail' />
+				<Icon icon="github" />
+				<Icon icon="linkedin" />
+				<Icon icon="mail" />
 				<!--
 				<Icon icon='instagram' />
         		-->
 			</div>
+			<!-- This page should really just be merged with my about page -->
 			<div id="nav-contact-section" class="nav-section">
-				<a href="/contact" on:click={handleNavToggle}>CONTACT</a>
+				<a href="/contact" on:click={handleNavToggle}>Contact</a>
 			</div>
 		</div>
 		<button id="nav-toggle-button" type="button" on:click={handleNavToggle}>
@@ -116,8 +119,23 @@
 		z-index: 5;
 	}
 
+	#nav-logo-section > a > iconify-icon,
+	#nav-logo-section > a > p {
+		display: inline-block;
+	}
+
+	#nav-logo-section > a {
+		display: flex;
+		align-items: center;
+	}
+
 	#nav-logo-section > a > iconify-icon {
 		font-size: 2.5rem;
+	}
+
+	#nav-logo-section > a > p {
+		margin-left: 1rem;
+		font-size: 1.5rem;
 	}
 
 	#nav-link-section {

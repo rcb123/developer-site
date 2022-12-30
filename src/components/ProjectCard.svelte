@@ -51,9 +51,9 @@
 
 <style>
 	.project-card {
-		background-color: #ffffff;
+		background-color: var(--text-color);
 		border-radius: 0.5rem;
-		box-shadow: 0 0.5rem 1rem var(--border-color);
+		box-shadow: 0 0.2rem 0.4rem 0.2rem var(--border-color);
 		display: flex;
 		flex-direction: column;
 		margin: 1rem;
@@ -67,7 +67,6 @@
 
 	.project-card .info {
 		padding: 1rem;
-		color: var(--background-color);
 	}
 
 	.project-card .info h2 {
@@ -84,7 +83,7 @@
 		background-color: var(--background-color);
 		border: none;
 		border-radius: 0.6rem;
-		color: #ffffff;
+		color: var(--text-color);
 		cursor: pointer;
 		display: flex;
 		align-items: center;

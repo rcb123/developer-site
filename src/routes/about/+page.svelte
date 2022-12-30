@@ -19,10 +19,9 @@
 			impact in the world.
 		</p>
 		<p>
-			In my free time, you can find me working on personal projects, collaborating with other
-			developers on open source projects, or participating in hackathons. I am always looking for
-			new opportunities to grow and learn, and I am excited to see where my career as a developer
-			takes me.
+			In my free time, you can find me working on personal projects, hiking, or hanging out with
+			friends. I am always looking for new opportunities to grow and learn, and I am excited to see
+			where my career as a developer takes me.
 		</p>
 		<!--
 			Connect with me on LinkedIn to learn more about my professional experience and skills, as well as my goals and aspirations as a developer.

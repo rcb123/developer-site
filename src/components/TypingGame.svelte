@@ -197,6 +197,12 @@
 		}
 	}
 
+	function setTime(time: number) {
+		seconds = time;
+		timer = seconds;
+		console.log(`${timer}`);
+	}
+
 	function sleep(ms: number | undefined) {
 		return new Promise((resolve) => setTimeout(resolve, ms));
 	}
@@ -209,6 +215,15 @@
 
 {#if game !== 'game over'}
 	<div class="game" data-game={game}>
+		{#if game !== 'in progress'}
+			<div class="time-selector">
+				<button on:click={() => setTime(15)}>15</button>
+				<button on:click={() => setTime(30)}>30</button>
+				<button on:click={() => setTime(60)}>60</button>
+				<button on:click={() => setTime(120)}>120</button>
+			</div>
+		{/if}
+
 		<input
 			bind:this={inputEl}
 			bind:value={typedLetter}
@@ -232,7 +247,7 @@
 
 				<div bind:this={caretEl} class="caret" />
 			</div>
-			<button on:click={focusInput} style:margin-top=0.5rem>Click here to refocus input</button>
+			<button on:click={focusInput} style:margin-top="0.5rem">Click here to refocus input</button>
 		{/key}
 
 		<div class="reset">
@@ -274,6 +289,12 @@
 {/if}
 
 <style lang="scss">
+	@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+	:root {
+		background-color: var(--background-color);
+	}
+
 	*,
 	*::before,
 	*::after {
@@ -281,8 +302,7 @@
 		padding: 0;
 		box-sizing: border-box;
 		font-family: 'Roboto Mono', monospace;
-		color: var(--fg-100);
-		background-color: var(--background-color);
+		color: var(--text-color);
 	}
 
 	button {

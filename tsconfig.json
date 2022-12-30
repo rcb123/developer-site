@@ -13,6 +13,7 @@
 		"paths": {
 			"$root/*": ["./src/*"],
 			"$components/*": ["./src/components/*"],
+			"$static/*": ["./src/static/*"],
 			"$images/*": ["./src/static/images/*"],
 			"$backgrounds/*": ["./src/static/images/weather/backgrounds/*"],
 			"$icons/*": ["./src/static/images/weather/icons/*"]
