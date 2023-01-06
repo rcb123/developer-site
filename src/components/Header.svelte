@@ -33,7 +33,10 @@
 		<div id="nav-mobile-section">
 			<div id="nav-link-section" class="nav-section">
 				<a href="/projects" on:click={handleNavToggle}>Projects</a>
-				<a href="https://drive.google.com/file/d/1eMY_IuJ7Vmqy2tWJpmsUqIvh5pM14euP/view?usp=share_link" on:click={handleNavToggle}>Resume</a>
+				<a
+					href="https://drive.google.com/file/d/1hP9XwLuCptcReHYP3b0L_AcNR7O8i3CZ/view?usp=sharing"
+					on:click={handleNavToggle}>Resume</a
+				>
 				<a href="/about" on:click={handleNavToggle}>About</a>
 			</div>
 			<div id="nav-social-section" class="nav-section">
@@ -145,5 +148,13 @@
 
 	#nav-social-section {
 		gap: 3rem;
+	}
+
+	@media screen and (max-width: 1043px) {
+		#nav-logo-section > a > p {
+			position: absolute;
+			opacity: 0;
+			font-size: 0;
+		}
 	}
 </style>

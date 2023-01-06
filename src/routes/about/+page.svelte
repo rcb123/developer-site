@@ -1,17 +1,18 @@
 <script>
-	import profile from './profile.jpg';
+	import profile from '$static/images/profile.jpg';
 </script>
 
 <svelte:head>
 	<title>About | Reza Banankhah</title>
 </svelte:head>
 
+<h1 class="text-center text-3xl font-semibold">About Me</h1>
+
 <section class="about">
 	<div class="image">
 		<img src={profile} alt="Reza Banankhah" />
 	</div>
 	<div class="content">
-		<h1>About Me</h1>
 		<p>
 			Hi, I'm Reza! I am a Sophomore computer science student at the University of Southern
 			California, where I am constantly pushing myself to learn new things and improve my skills as
@@ -31,12 +32,16 @@
 </section>
 
 <style lang="scss">
+	h1 {
+		margin-top: 3rem;
+	}
+
 	.about {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 2rem;
-		padding-top: 5rem;
+		padding-top: 2rem;
 
 		.image {
 			width: 30%;
