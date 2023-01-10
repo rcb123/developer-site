@@ -33,10 +33,7 @@
 		<div id="nav-mobile-section">
 			<div id="nav-link-section" class="nav-section">
 				<a href="/projects" on:click={handleNavToggle}>Projects</a>
-				<a
-					href="https://drive.google.com/file/d/1hP9XwLuCptcReHYP3b0L_AcNR7O8i3CZ/view?usp=sharing"
-					on:click={handleNavToggle}>Resume</a
-				>
+				<a href="/resume" on:click={handleNavToggle}>Resume</a>
 				<a href="/about" on:click={handleNavToggle}>About</a>
 			</div>
 			<div id="nav-social-section" class="nav-section">
@@ -67,7 +64,7 @@
 	}
 
 	nav .nav-section {
-		padding: 3rem 2rem;
+		padding: 2.5rem 2rem;
 		display: flex;
 		gap: 1rem;
 		border-left: 1px solid var(--border-color);

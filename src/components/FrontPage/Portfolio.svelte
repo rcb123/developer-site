@@ -36,7 +36,8 @@
 
 <h2 class="text-center text-3xl font-bold">Portfolio</h2>
 <h3 class="mb-4 text-center">See them in action on my Projects page</h3>
-<div class="flex justify-center">
+
+<div class="flex mx-auto max-w-4xl justify-center">
 	<div class="ml-4 mr-4 mb-10 grid grid-cols-3 gap-4">
 		{#each projects as project}
 			<ProjectCard
