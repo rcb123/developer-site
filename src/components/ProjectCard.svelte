@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	import project1 from '$images/project1.jpg';
-	import project2 from '$images/project2.jpg';
-	import project3 from '$images/project3.jpg';
-	import project4 from '$images/project4.jpg';
+	import sveltype from '$images/sveltype.jpg';
+	import videomp3 from '$images/videomp3.jpg';
+	import sveltcord from '$images/sveltcord.jpg';
+	import weather from '$images/weather.jpg';
+	import portfolio from '$images/portfolio.jpg';
 
 	export let image = '';
 	export let title = '';
@@ -12,7 +13,7 @@
 	export let projectPage = '';
 	export let githubLink = '';
 
-	let dummy = project1 + project2 + project3 + project4;
+	let dummy = sveltype + videomp3 + sveltcord + weather + portfolio;
 
 	let src: string;
 

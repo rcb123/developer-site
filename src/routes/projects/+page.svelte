@@ -13,28 +13,35 @@
 		<ProjectCard
 			title="Video to MP3 Converter"
 			description="A microservice-based video to MP3 converter using Kubernetes, Docker, MongoDB, RabbitMQ, and Python."
-			image="project1"
+			image="videomp3"
 			projectPage=""
 			githubLink="https://github.com/rcb123/video-mp3-converter"
 		/>
 		<ProjectCard
 			title="Sveltype"
 			description="A typing game made using JavaScript and SvelteKit. Based on Monkeytype."
-			image="project2"
-			projectPage="/projects/sveltype"
-			githubLink="https://github.com/rcb123/monkeytype-clone"
+			image="sveltype"
+			projectPage="https://reza-sveltype.vercel.app/"
+			githubLink="https://github.com/rcb123/sveltype"
+		/>
+		<ProjectCard
+			title="Sveltcord"
+			description="A chat app made using TypeScript, TailwindCSS, MongoDB, and SvelteKit. Based on Discord. In active development"
+			image="sveltcord"
+			projectPage=""
+			githubLink="https://github.com/rcb123/sveltcord"
 		/>
 		<ProjectCard
 			title="Weather App"
 			description="A weather app using SvelteKit and the OpenWeatherMap API"
-			image="project3"
+			image="weather"
 			projectPage="/projects/weather"
 			githubLink="https://github.com/rcb123/weather-app"
 		/>
 		<ProjectCard
 			title="Developer Portfolio"
 			description="My personal website! It showcases my skills and projects, as well as provides a little bit of information about me. I used SvelteKit, HTML, CSS, and JavaScript to create a responsive and visually appealing design."
-			image="project4"
+			image="portfolio"
 			projectPage="/"
 			githubLink="https://github.com/rcb123/developer-site"
 		/>
