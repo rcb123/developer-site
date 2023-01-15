@@ -301,7 +301,16 @@
 				rows="10"
 				cols="20"
 				class="textarea-bordered textarea text-xs"
-			/>
+			>...###.#....
+##.#...####.
+...#.#.#....
+#.####.####.
+#F..#..#.##.
+###.#....#S.
+#.#.####.##.
+....#.#...#.
+.####.#.#.#.
+........#...</textarea>
 			<br />
 			<button type="submit" class="btn">Solve Maze</button>
 		</form>
