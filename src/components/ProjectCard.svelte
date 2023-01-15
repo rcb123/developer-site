@@ -4,6 +4,7 @@
 	import sveltype from '$images/sveltype.jpg';
 	import videomp3 from '$images/videomp3.jpg';
 	import sveltcord from '$images/sveltcord.jpg';
+	import maze from '$images/maze.jpg';
 	import weather from '$images/weather.jpg';
 	import portfolio from '$images/portfolio.jpg';
 
@@ -13,7 +14,7 @@
 	export let projectPage = '';
 	export let githubLink = '';
 
-	let dummy = sveltype + videomp3 + sveltcord + weather + portfolio;
+	let dummy = sveltype + videomp3 + sveltcord + maze + weather + portfolio;
 
 	let src: string;
 
@@ -39,7 +40,7 @@
 <p style:position="absolute" style:opacity="0">{dummy}</p>
 {#if src}
 	<div class="project-card">
-		<img {src} alt={title} />
+		<img {src} alt={title} width="330" height="220" />
 		<div class="info">
 			<h2>{title}</h2>
 			<p>{description}</p>
@@ -47,7 +48,9 @@
 		{#if projectPage}
 			<button class="cta" on:click={() => onClick('project')}> View Project in Action </button>
 		{/if}
-		<button class="cta" on:click={() => onClick('github')}> View Source Code </button>
+		{#if githubLink}
+			<button class="cta" on:click={() => onClick('github')}> View Source Code </button>
+		{/if}
 	</div>
 {/if}
 

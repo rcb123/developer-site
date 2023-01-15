@@ -242,7 +242,7 @@
 		border: none;
 		border-radius: 0.6rem;
 		box-shadow: 3px 8px 4px rgba(0, 0, 0, 0.2), 6px 10px 20px rgba(0, 0, 0, 0.1);
-		color: var(--fg-100);
+		color: #f9fafb;
 		padding: 16px 32px;
 		text-align: center;
 		text-decoration: none;
@@ -265,7 +265,7 @@
 	}
 
 	form input[type='text'] {
-		border: 2px solid var(--fg-100);
+		border: 2px solid #f9fafb;
 		border-radius: 0.4rem;
 		font-size: 16px;
 		padding: 8px 12px;

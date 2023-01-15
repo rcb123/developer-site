@@ -32,6 +32,13 @@
 			githubLink="https://github.com/rcb123/sveltcord"
 		/>
 		<ProjectCard
+			title="Maze Solver"
+			description="An ASCII based maze solver. Originally made using C++ and then adapted to TypeScript."
+			image="maze"
+			projectPage="/projects/maze"
+			githubLink=""
+		/>
+		<ProjectCard
 			title="Weather App"
 			description="A weather app using SvelteKit and the OpenWeatherMap API"
 			image="weather"
