@@ -11,33 +11,47 @@
 		},
 		{
 			name: 'Sveltype',
-			technologies: ['SvelteKit', 'TypeScript', 'TailwindCSS', 'HTML'],
-			duration: '1 months',
+			technologies: ['SvelteKit', 'TypeScript'],
+			duration: '2 months',
 			description: 'A typing game based on Monkeytype.',
 			image: 'sveltype.jpg'
 		},
 		{
 			name: 'Sveltcord',
-			technologies: ['SvelteKit', 'TypeScript', 'TailwindCSS', 'MongoDB', 'HTML'],
+			technologies: ['SvelteKit', 'TypeScript', 'MongoDB'],
 			duration: '1 months',
 			description: 'A real-time chat app based on Discord.',
 			image: 'sveltcord.jpg'
 		},
 		{
+			name: 'Maze Solver',
+			technologies: ['Svelte', 'TypeScript'],
+			duration: '1 months',
+			description: 'An ASCII BFS maze solver.',
+			image: 'maze.jpg'
+		},
+		{
+			name: 'NxN Tic Tac Toe',
+			technologies: ['Svelte', 'TypeScript'],
+			duration: '1 months',
+			description: 'A resizable Tic Tac Toe game',
+			image: 'tictactoe.jpg'
+		},
+		{
 			name: 'Weather App',
-			technologies: ['SvelteKit', 'TypeScript', 'CSS', 'HTML'],
+			technologies: ['SvelteKit', 'TypeScript'],
 			duration: '1 months',
 			description: 'A weather app utilizing the OpenWeatherMap API',
 			image: 'weather.jpg'
 		},
-		{
-			name: 'Developer Portfolio',
-			technologies: ['SvelteKit', 'TypeScript', 'TailwindCSS', 'HTML'],
-			duration: '2 months',
-			description:
-				'My personal website! It showcases my skills and projects, as well as provides a little bit of information about me. I used SvelteKit, HTML, CSS, and JavaScript to create a responsive and visually appealing design."',
-			image: 'portfolio.jpg'
-		}
+		// {
+		// 	name: 'Developer Portfolio',
+		// 	technologies: ['SvelteKit', 'TypeScript', 'TailwindCSS', 'HTML'],
+		// 	duration: '2 months',
+		// 	description:
+		// 		'My personal website! It showcases my skills and projects, as well as provides a little bit of information about me. I used SvelteKit, HTML, CSS, and JavaScript to create a responsive and visually appealing design.',
+		// 	image: 'portfolio.jpg'
+		// }
 	];
 </script>
 
