@@ -7,28 +7,28 @@
 			technologies: ['Python', 'Kubernetes', 'Docker', 'MongoDB', 'RabbitMQ'],
 			duration: '1 month',
 			description: 'A microservice-based video to MP3 converter.',
-			image: 'videomp3'
+			image: 'videomp3.jpg'
 		},
 		{
 			name: 'Sveltype',
 			technologies: ['SvelteKit', 'TypeScript', 'TailwindCSS', 'HTML'],
 			duration: '1 months',
 			description: 'A typing game based on Monkeytype.',
-			image: 'sveltype'
+			image: 'sveltype.jpg'
 		},
 		{
 			name: 'Sveltcord',
 			technologies: ['SvelteKit', 'TypeScript', 'TailwindCSS', 'MongoDB', 'HTML'],
 			duration: '1 months',
 			description: 'A real-time chat app based on Discord.',
-			image: 'sveltcord'
+			image: 'sveltcord.jpg'
 		},
 		{
 			name: 'Weather App',
 			technologies: ['SvelteKit', 'TypeScript', 'CSS', 'HTML'],
 			duration: '1 months',
 			description: 'A weather app utilizing the OpenWeatherMap API',
-			image: 'weather'
+			image: 'weather.jpg'
 		},
 		{
 			name: 'Developer Portfolio',
@@ -36,7 +36,7 @@
 			duration: '2 months',
 			description:
 				'My personal website! It showcases my skills and projects, as well as provides a little bit of information about me. I used SvelteKit, HTML, CSS, and JavaScript to create a responsive and visually appealing design."',
-			image: 'portfolio'
+			image: 'portfolio.jpg'
 		}
 	];
 </script>

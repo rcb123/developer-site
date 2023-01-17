@@ -1,12 +1,11 @@
 <script>
 	import Icon from '$components/Icon.svelte';
-	import profile from '$static/images/profile.jpg';
 </script>
 
 <div class="inset-0 mx-auto flex max-w-6xl justify-center p-24 text-black">
 	<div class="mt-20 flex max-w-2xl flex-col gap-5 ">
 		<div class="h-24 w-24">
-			<img src={profile} alt="" class="rounded-full object-cover object-center" />
+			<img src='/images/profile.jpg' alt="" class="rounded-full object-cover object-center" />
 		</div>
 
 		<h1 class="text-4xl font-bold tracking-tight text-black sm:text-5xl">
