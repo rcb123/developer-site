@@ -13,42 +13,49 @@
 		<ProjectCard
 			title="Video to MP3 Converter"
 			description="A microservice-based video to MP3 converter using Kubernetes, Docker, MongoDB, RabbitMQ, and Python."
-			image="videomp3"
+			image="videomp3.jpg"
 			projectPage=""
 			githubLink="https://github.com/rcb123/video-mp3-converter"
 		/>
 		<ProjectCard
 			title="Sveltype"
 			description="A typing game made using JavaScript and SvelteKit. Based on Monkeytype."
-			image="sveltype"
+			image="sveltype.jpg"
 			projectPage="https://reza-sveltype.vercel.app/"
 			githubLink="https://github.com/rcb123/sveltype"
 		/>
 		<ProjectCard
 			title="Sveltcord"
 			description="A chat app made using TypeScript, TailwindCSS, MongoDB, and SvelteKit. Based on Discord. In active development"
-			image="sveltcord"
+			image="sveltcord.jpg"
 			projectPage=""
 			githubLink="https://github.com/rcb123/sveltcord"
 		/>
 		<ProjectCard
 			title="Maze Solver"
 			description="An ASCII based maze solver. Originally made using C++ and then adapted to TypeScript."
-			image="maze"
+			image="maze.jpg"
 			projectPage="/projects/maze"
 			githubLink=""
 		/>
 		<ProjectCard
 			title="Weather App"
 			description="A weather app using SvelteKit and the OpenWeatherMap API"
-			image="weather"
+			image="weather.jpg"
 			projectPage="/projects/weather"
 			githubLink="https://github.com/rcb123/weather-app"
 		/>
 		<ProjectCard
+			title="Tic Tac Toe"
+			description="A NxN tic tac toe game written in TypeScript"
+			image="tictactoe.jpg"
+			projectPage="/projects/tictactoe"
+			githubLink=""
+		/>
+		<ProjectCard
 			title="Developer Portfolio"
 			description="My personal website! It showcases my skills and projects, as well as provides a little bit of information about me. I used SvelteKit, HTML, CSS, and JavaScript to create a responsive and visually appealing design."
-			image="portfolio"
+			image="portfolio.jpg"
 			projectPage="/"
 			githubLink="https://github.com/rcb123/developer-site"
 		/>

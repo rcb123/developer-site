@@ -18,7 +18,7 @@
 </script>
 
 <div class="project-card">
-	<img src="./images/{image}.jpg" alt={title} width="330" height="220" />
+	<img src="./images/{image}" alt={title} width="330" height="220" />
 	<div class="info">
 		<h2>{title}</h2>
 		<p>{description}</p>
