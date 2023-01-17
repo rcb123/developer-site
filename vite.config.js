@@ -8,10 +8,10 @@ const config = {
 		alias: {
 			$root: path.resolve('./src'),
 			$components: path.resolve('./src/components'),
-			$static: path.resolve('./src/static'),
-			$images: path.resolve('./src/static/images'),
-			$backgrounds: path.resolve('./src/static/images/weather/backgrounds'),
-			$icons: path.resolve('./src/static/images/weather/icons')
+			$static: path.resolve('/'),
+			$images: path.resolve('/images'),
+			$backgrounds: path.resolve('/images/weather/backgrounds'),
+			$icons: path.resolve('/images/weather/icons')
 		}
 	},
 	test: {

@@ -1,63 +1,4 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
-
-	// import all the icon assets
-	import i01d from '$icons/01d.png';
-	import i01n from '$icons/01n.png';
-	import i02d from '$icons/02d.png';
-	import i02n from '$icons/02n.png';
-	import i03d from '$icons/03d.png';
-	import i03n from '$icons/03n.png';
-	import i04d from '$icons/04d.png';
-	import i04n from '$icons/04n.png';
-	import i09d from '$icons/09d.png';
-	import i09n from '$icons/09n.png';
-	import i10d from '$icons/10d.png';
-	import i10n from '$icons/10n.png';
-	import i11d from '$icons/11d.png';
-	import i11n from '$icons/11n.png';
-	import i13d from '$icons/13d.png';
-	import i13n from '$icons/13n.png';
-	import i50d from '$icons/50d.png';
-	import i50n from '$icons/50n.png';
-	import iunknown from '$icons/unknown.png';
-
-	// import all the background assets
-	import Clear from '$backgrounds/Clear.jpeg';
-	import Clouds from '$backgrounds/Clouds.jpeg';
-	import Drizzle from '$backgrounds/Drizzle.jpeg';
-	import Fog from '$backgrounds/Fog.jpeg';
-	import Mist from '$backgrounds/Mist.jpeg';
-	import Rain from '$backgrounds/Rain.jpeg';
-
-	// dummy variable to force asset packaging
-	let dummy =
-		i01d +
-		i01n +
-		i02d +
-		i02n +
-		i03d +
-		i03n +
-		i04d +
-		i04n +
-		i09d +
-		i09n +
-		i10d +
-		i10n +
-		i11d +
-		i11n +
-		i13d +
-		i13n +
-		i50d +
-		i50n +
-		iunknown +
-		Clear +
-		Clouds +
-		Drizzle +
-		Fog +
-		Mist +
-		Rain;
-
 	type Choice = 'coordinates' | 'city' | 'zipcode';
 
 	let lat = '';
@@ -71,8 +12,6 @@
 	let weather = 'Clear';
 	let weatherDesc = '';
 	let iconID = '01d';
-	let src = '';
-	let bgImg = '';
 
 	async function getWeather() {
 		const response = await fetch(`/api/weather?lat=${lat}&lng=${lng}`);
@@ -125,22 +64,15 @@
 			console.error(error);
 		}
 	}
-
-	$: if (browser) {
-		src = eval('i' + iconID);
-	}
-	$: if (browser) {
-		bgImg = eval(weather);
-	}
 </script>
 
-<div class="layout" style:background-image="url({bgImg})">
-	<!-- Using dummy variable to force asset import -->
-	<p style:position=absolute style:opacity=0>{dummy}</p>
-
+<div
+	class="layout grid h-full items-center p-8"
+	style:background-image="url(../images/weather/backgrounds/{weather}.jpeg)"
+>
 	<nav>
-		<img {src} alt={weather} />
-		<h1 class="text">weather</h1>
+		<img src="../images/weather/icons/{iconID}.png" alt={weather} />
+		<h1 class="mt-[-1rem] mb-8 text-7xl tracking-wider text-base-100">weather</h1>
 	</nav>
 
 	<main>
@@ -195,8 +127,8 @@
 						<input type="text" bind:value={zipcode} style:margin-bottom="5.64rem" required />
 					</label>
 					<br />
-					<button type="submit">Get Weather</button>
-					<button type="button" on:click={useLocation} style:margin-left="1rem"
+					<button type="submit" class="bg-gradient-to-r from-cyan-500 to-blue-500" >Get Weather</button>
+					<button type="button" on:click={useLocation} style:margin-left="1rem" class="bg-gradient-to-r from-cyan-500 to-blue-500"
 						>Get Current Location</button
 					>
 				</form>
@@ -205,7 +137,7 @@
 	</main>
 </div>
 
-<div class="layout results">
+<div class="layout results grid h-full items-center p-8">
 	{#if temperature}
 		<p>Temperature: {temperature}°F</p>
 		<p>Feels Like: {feelsLike}°F</p>
@@ -214,23 +146,8 @@
 </div>
 
 <style lang="scss">
-	h1 {
-		font-family: 'Lexend Deca', sans-serif;
-		font-size: 5rem;
-		color: var(--background-color);
-		letter-spacing: 2px;
-
-		&.text {
-			margin-top: -30px;
-		}
-	}
-
 	.layout {
-		height: 100%;
-		display: grid;
 		grid-template-rows: auto 1fr;
-		align-items: center;
-		padding: 2rem;
 
 		background-position: center top;
 		background-repeat: no-repeat;
@@ -238,7 +155,6 @@
 	}
 
 	button {
-		background-color: #0077c9;
 		border: none;
 		border-radius: 0.6rem;
 		box-shadow: 3px 8px 4px rgba(0, 0, 0, 0.2), 6px 10px 20px rgba(0, 0, 0, 0.1);
@@ -247,12 +163,12 @@
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-family: 'Lexend Deca', sans-serif;
 		font-size: 18px;
 		margin: 1rem 0;
 
-		background: linear-gradient(to bottom, #0077c9, #003399);
-		cursor: pointer;
+		--tw-gradient-from: #06b6d4;
+		--tw-gradient-to: rgb(6 182 212 / 0);
+		background: linear-gradient(to bottom, var(--tw-gradient-from), var(--tw-gradient-to));
 
 		&:hover {
 			background-color: #006699;
