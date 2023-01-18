@@ -8,7 +8,7 @@
 
 <section>
 	<div class="content">
-		<h1 class="text-3xl">Contact Me</h1>
+		<h1 class="text-2xl sm:text-3xl">Contact Me</h1>
 		<p class="text-lg">
 			Thank you for visiting my developer website! <br><br>
 			As a college student seeking internship opportunities, 

@@ -55,15 +55,15 @@
 	];
 </script>
 
-<div class="mx-auto mt-4 flex max-w-4xl flex-col">
-	<h2 class="mb-2 text-4xl font-bold">My Projects</h2>
-	<div class="mb-2">
+<div class="mx-auto mt-4 flex max-w-[22rem] sm:max-w-4xl flex-col">
+	<h2 class="mb-3 text-4xl font-bold sm:mb-2 max-sm:text-center">My Projects</h2>
+	<div class="mb-3 sm:mb-2">
 		<a href="/projects" class="underline">See them in action</a>
 	</div>
 </div>
 
-<div class="mx-auto flex max-w-4xl justify-center">
-	<div class="mb-10 grid grid-cols-3 gap-4">
+<div class="mx-auto flex max-w-4xl justify-center max-sm:max-w-[23rem]">
+	<div class="mb-10 grid grid-cols-3 gap-4 max-sm:grid-cols-1 max-sm:gap-5">
 		{#each projects as project}
 			<ProjectCard
 				name={project.name}

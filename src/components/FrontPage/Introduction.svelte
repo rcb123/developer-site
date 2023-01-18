@@ -2,16 +2,16 @@
 	import Icon from '$components/Icon.svelte';
 </script>
 
-<div class="inset-0 mx-auto flex h-[90vh] max-w-6xl p-24 justify-center text-black">
-	<div class="flex max-w-2xl flex-col gap-5 justify-center">
-		<div class="h-32 w-32">
-			<img src='/images/profile.jpg' alt="" class="rounded-full object-cover object-center" />
+<div class="inset-0 mx-auto flex h-[90vh] max-w-6xl justify-center sm:p-24 text-black p-10">
+	<div class="flex flex-col justify-center gap-5">
+		<div class="sm:h-32 sm:w-32 h-24 w-24">
+			<img src="/images/profile.jpg" alt="" class="rounded-full object-cover object-center" />
 		</div>
 
-		<h1 class="text-4xl font-bold tracking-tight text-black sm:text-5xl">
+		<h1 class="text-3xl font-bold tracking-tight text-black sm:text-5xl">
 			Software Developer, USC Student, and part time traveler.
 		</h1>
-		<p class=" text-base text-zinc-500">
+		<p class="text-sm text-zinc-500 sm:text-base">
 			As a Computer Science Business Administration major with a passion for fullstack web
 			development and software engineering, I am constantly seeking new opportunities to grow and
 			expand my skillset.<br />

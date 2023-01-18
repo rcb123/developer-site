@@ -6,10 +6,10 @@
 	<title>Projects | Reza Banankhah</title>
 </svelte:head>
 
-<h1 class="text-center text-3xl font-semibold">Projects</h1>
+<h1 class="text-center max-sm:text-2xl md:text-3xl font-semibold mt-4 sm:mt-12">Projects</h1>
 
-<main class="container">
-	<div class="projects">
+<main class="flex items-center justify-center">
+	<div class="projects grid gap-0 sm:gap-4 text-white grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 		<ProjectCard
 			title="Video to MP3 Converter"
 			description="A microservice-based video to MP3 converter using Kubernetes, Docker, MongoDB, RabbitMQ, and Python."
@@ -61,16 +61,3 @@
 		/>
 	</div>
 </main>
-
-<style>
-	.projects {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		grid-gap: 1rem;
-		color: var(--background-color);
-	}
-
-	h1 {
-		margin-top: 0.6rem;
-	}
-</style>

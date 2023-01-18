@@ -33,17 +33,19 @@
 		{
 			name: 'GitHub',
 			icon: 'mdi:github'
-		},
+		}
 	];
 </script>
 
-<div class="mx-auto mb-10 flex max-w-4xl flex-col">
-	<h2 class="my-4 text-4xl font-bold">My Toolkit 💻</h2>
+<div class="mx-auto mb-10 flex sm:max-w-4xl flex-col max-w-[23rem]">
+	<h2 class="my-4 text-3xl font-bold sm:text-4xl">My Toolkit 💻</h2>
 	<div class="flex flex-col justify-center">
 		<div class="grid grid-cols-4">
 			{#each skills as skill}
-				<div class="mx-4 my-8 flex h-20 w-32 flex-col items-center justify-center rounded text-2xl">
-					<span class="text-5xl">
+				<div
+					class="mx-4 my-8 flex h-10 w-12 flex-col items-center justify-center rounded sm:h-16 sm:w-20 sm:text-xl md:h-20 md:w-32 lg:text-2xl"
+				>
+					<span class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
 						<iconify-icon icon={skill.icon} />
 					</span>
 					{skill.name}
