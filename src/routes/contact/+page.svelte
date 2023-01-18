@@ -8,8 +8,8 @@
 
 <section>
 	<div class="content">
-		<h1>Contact Me</h1>
-		<p>
+		<h1 class="text-3xl">Contact Me</h1>
+		<p class="text-lg">
 			Thank you for visiting my developer website! <br><br>
 			As a college student seeking internship opportunities, 
 			I am always looking to connect with potential employers 
@@ -50,11 +50,11 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-grow: 1;
-		padding-top: 3rem;
+		padding-top: 2rem;
 
-		width: 60%;
-		margin-left: 20%;
+		width: 50%;
+		margin-left: 25%;
 
-		font-size: 5rem;
+		font-size: 2rem;
 	}
 </style>

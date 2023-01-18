@@ -6,7 +6,8 @@
 		Education,
 		Experience,
 		Contact,
-		Blog
+		Blog,
+		Footer
 	} from '$components/FrontPage/index';
 </script>
 
@@ -22,4 +23,5 @@
 	<Contact />
 	<Blog />
 	-->
+	<Footer />
 </main>

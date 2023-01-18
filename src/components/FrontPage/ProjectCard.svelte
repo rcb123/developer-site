@@ -6,7 +6,7 @@
 	export let image = '';
 </script>
 
-<div class="max-w-sm overflow-hidden rounded shadow-lg">
+<div class="max-w-sm overflow-hidden rounded-2xl shadow-lg">
 	<img class="w-full" src="/images/{image}" alt={name} />
 	<div class="px-6 py-4">
 		<div class="mb-2 text-xl font-bold">{name}</div>

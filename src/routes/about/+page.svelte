@@ -2,9 +2,9 @@
 	<title>About | Reza Banankhah</title>
 </svelte:head>
 
-<h1 class="text-center text-3xl font-semibold pt-8">About Me</h1>
+<h1 class="text-center text-3xl mt-12">About Me</h1>
 
-<section class="flex items-center justify-between p-8 pt-8">
+<section class="flex items-center justify-between px-8 h-[64vh]">
 	<div class="w-1/3 h-fit max-w-md rounded-full overflow-hidden">
 		<img src='./images/profile.jpg' alt="Reza Banankhah" class="w-full h-full object-cover" />
 	</div>

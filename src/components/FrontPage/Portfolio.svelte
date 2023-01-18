@@ -43,7 +43,7 @@
 			duration: '1 months',
 			description: 'A weather app utilizing the OpenWeatherMap API',
 			image: 'weather.jpg'
-		},
+		}
 		// {
 		// 	name: 'Developer Portfolio',
 		// 	technologies: ['SvelteKit', 'TypeScript', 'TailwindCSS', 'HTML'],
@@ -55,11 +55,15 @@
 	];
 </script>
 
-<h2 class="text-center text-3xl font-bold mt-4">Portfolio</h2>
-<h3 class="mb-4 text-center">See them in action on my Projects page</h3>
+<div class="mx-auto mt-4 flex max-w-4xl flex-col">
+	<h2 class="mb-2 text-4xl font-bold">My Projects</h2>
+	<div class="mb-2">
+		<a href="/projects" class="underline">See them in action</a>
+	</div>
+</div>
 
-<div class="flex mx-auto max-w-4xl justify-center">
-	<div class="ml-4 mr-4 mb-10 grid grid-cols-3 gap-4">
+<div class="mx-auto flex max-w-4xl justify-center">
+	<div class="mb-10 grid grid-cols-3 gap-4">
 		{#each projects as project}
 			<ProjectCard
 				name={project.name}
@@ -71,3 +75,46 @@
 		{/each}
 	</div>
 </div>
+<!-- 
+<div class="wrapper">
+	<div class="box1 bg-red-400">One</div>
+	<div class="box2 bg-blue-400">Two</div>
+	<div class="box3 bg-green-400">Three</div>
+	<div class="box4 bg-slate-400">Four</div>
+</div>
+
+<style lang="scss">
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: 200px;
+	}
+
+	.box1 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.box2 {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.box3 {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+
+	.box4 {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+</style> -->
