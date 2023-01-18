@@ -2,7 +2,7 @@
 	import Icon from '$components/Icon.svelte';
 </script>
 
-<div class="inset-0 mx-auto flex h-[89vh] max-w-6xl p-24 justify-center text-black">
+<div class="inset-0 mx-auto flex h-[90vh] max-w-6xl p-24 justify-center text-black">
 	<div class="flex max-w-2xl flex-col gap-5 justify-center">
 		<div class="h-32 w-32">
 			<img src='/images/profile.jpg' alt="" class="rounded-full object-cover object-center" />

@@ -1,5 +1,5 @@
 <script>
-	import Header from '$components/Header.svelte';
+	import Header from '$root/components/Header.svelte';
 	import '$root/app.css';
 
 	import { inject } from '@vercel/analytics';
