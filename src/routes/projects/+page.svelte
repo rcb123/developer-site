@@ -11,13 +11,6 @@
 <main class="flex items-center justify-center">
 	<div class="projects grid gap-0 sm:gap-4 text-white grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 		<ProjectCard
-			title="Video to MP3 Converter"
-			description="A microservice-based video to MP3 converter using Kubernetes, Docker, MongoDB, RabbitMQ, and Python."
-			image="videomp3.jpg"
-			projectPage=""
-			githubLink="https://github.com/rcb123/video-mp3-converter"
-		/>
-		<ProjectCard
 			title="Sveltype"
 			description="A typing game made using JavaScript and SvelteKit. Based on Monkeytype."
 			image="sveltype.jpg"
@@ -32,11 +25,25 @@
 			githubLink="https://github.com/rcb123/sveltcord"
 		/>
 		<ProjectCard
+			title="URL Shortener"
+			description="A URL shortening service made using TypeScript, SvelteKit, Prisma, and MongoDB. Functional but not production ready."
+			image="urlshort.jpg"
+			projectPage=""
+			githubLink="https://github.com/rcb123/url-shortener"
+		/>
+		<ProjectCard
+			title="Video to MP3 Converter"
+			description="A microservice-based video to MP3 converter using Kubernetes, Docker, MongoDB, RabbitMQ, and Python."
+			image="videomp3.jpg"
+			projectPage=""
+			githubLink="https://github.com/rcb123/video-mp3-converter"
+		/>
+		<ProjectCard
 			title="Maze Solver"
 			description="An ASCII based maze solver. Originally made using C++ and then adapted to TypeScript."
 			image="maze.jpg"
 			projectPage="/projects/maze"
-			githubLink=""
+			githubLink="https://github.com/rcb123/maze-solver-web"
 		/>
 		<ProjectCard
 			title="Weather App"
@@ -50,7 +57,7 @@
 			description="A NxN tic tac toe game written in TypeScript"
 			image="tictactoe.jpg"
 			projectPage="/projects/tictactoe"
-			githubLink=""
+			githubLink="https://github.com/rcb123/nxn-tic-tac-toe"
 		/>
 		<ProjectCard
 			title="Developer Portfolio"
