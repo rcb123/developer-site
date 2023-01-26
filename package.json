@@ -42,7 +42,6 @@
 		"@vercel/analytics": "^0.1.6",
 		"daisyui": "^2.46.1",
 		"dotenv": "^16.0.3",
-		"firebase": "^9.15.0",
 		"iconify-icon": "^1.0.2",
 		"isomorphic-fetch": "^3.0.0",
 		"register-service-worker": "^1.7.2",
