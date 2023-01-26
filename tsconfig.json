@@ -16,8 +16,8 @@
 			"$static/*": ["/*"],
 			"$images/*": ["/images/*"],
 			"$backgrounds/*": ["/images/weather/backgrounds/*"],
-			"$icons/*": ["/images/weather/icons/*"]
-		}
+			"$icons/*": ["/images/weather/icons/*"],
+		},
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//
