@@ -3,18 +3,18 @@
 
 	let projects = [
 		{
-			name: 'Video to MP3 Converter',
-			technologies: ['Python', 'Kubernetes', 'Docker', 'MongoDB', 'RabbitMQ'],
-			duration: '1 month',
-			description: 'A microservice-based video to MP3 converter.',
-			image: 'videomp3.jpg'
-		},
-		{
 			name: 'Sveltype',
 			technologies: ['SvelteKit', 'TypeScript'],
 			duration: '2 months',
 			description: 'A typing game based on Monkeytype.',
 			image: 'sveltype.jpg'
+		},
+		{
+			name: 'Shortly',
+			technologies: ['SvelteKit', 'TypeScript', 'Postgresql'],
+			duration: '1 months',
+			description: 'A URL shortening service.',
+			image: 'urlshort.jpg'
 		},
 		{
 			name: 'Sveltcord',
@@ -38,12 +38,19 @@
 			image: 'tictactoe.jpg'
 		},
 		{
-			name: 'Weather App',
-			technologies: ['SvelteKit', 'TypeScript'],
-			duration: '1 months',
-			description: 'A weather app utilizing the OpenWeatherMap API',
-			image: 'weather.jpg'
-		}
+			name: 'Video to MP3 Converter',
+			technologies: ['Python', 'Kubernetes', 'Docker', 'MongoDB', 'RabbitMQ'],
+			duration: '1 month',
+			description: 'A microservice-based video to MP3 converter.',
+			image: 'videomp3.jpg'
+		},
+		// {
+		// 	name: 'Weather App',
+		// 	technologies: ['SvelteKit', 'TypeScript'],
+		// 	duration: '1 months',
+		// 	description: 'A weather app utilizing the OpenWeatherMap API',
+		// 	image: 'weather.jpg'
+		// }
 		// {
 		// 	name: 'Developer Portfolio',
 		// 	technologies: ['SvelteKit', 'TypeScript', 'TailwindCSS', 'HTML'],
