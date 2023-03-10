@@ -18,6 +18,13 @@
 			githubLink="https://github.com/rcb123/sveltype"
 		/>
 		<ProjectCard
+			title="URL Shortener"
+			description="A URL shortening service made using TypeScript, SvelteKit, Prisma, and MongoDB. Functional but not production ready."
+			image="shortly.jpg"
+			projectPage=""
+			githubLink="https://github.com/rcb123/url-shortener"
+		/>
+		<ProjectCard
 			title="Sveltcord"
 			description="A chat app made using TypeScript, TailwindCSS, MongoDB, and SvelteKit. Based on Discord. In active development"
 			image="sveltcord.jpg"
@@ -25,18 +32,18 @@
 			githubLink="https://github.com/rcb123/sveltcord"
 		/>
 		<ProjectCard
-			title="URL Shortener"
-			description="A URL shortening service made using TypeScript, SvelteKit, Prisma, and MongoDB. Functional but not production ready."
-			image="urlshort.jpg"
-			projectPage=""
-			githubLink="https://github.com/rcb123/url-shortener"
-		/>
-		<ProjectCard
 			title="Video to MP3 Converter"
 			description="A microservice-based video to MP3 converter using Kubernetes, Docker, MongoDB, RabbitMQ, and Python."
 			image="videomp3.jpg"
 			projectPage=""
 			githubLink="https://github.com/rcb123/video-mp3-converter"
+		/>
+		<ProjectCard
+			title="Clicking"
+			description="A website that matches movie lovers with other people with similar tastes. Made for HackSC 2023, not fully functional."
+			image="sveltcord.jpg"
+			projectPage="https://clicking.vercel.app"
+			githubLink="https://github.com/rcb123/HackSC-Clicking"
 		/>
 		<ProjectCard
 			title="Maze Solver"

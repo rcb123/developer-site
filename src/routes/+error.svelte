@@ -2,7 +2,7 @@
     import { page } from '$app/stores';
 </script>
 
-<div>
+<div class="m-auto rounded-lg bg-slate-100">
     <h1>It seems there has been an error, sorry about that.</h1>
     {#if $page?.error}
         <div class="mt-4 p-4 border-y-2">

@@ -14,7 +14,7 @@
 			technologies: ['SvelteKit', 'TypeScript', 'Postgresql'],
 			duration: '1 months',
 			description: 'A URL shortening service.',
-			image: 'urlshort.jpg'
+			image: 'shortly.jpg'
 		},
 		{
 			name: 'Sveltcord',
