@@ -13,7 +13,7 @@
 			name: 'Shortly',
 			technologies: ['SvelteKit', 'TypeScript', 'Postgresql'],
 			duration: '1 months',
-			description: 'A URL shortening service.',
+			description: 'A URL shortening service with CRUD functionality.',
 			image: 'shortly.jpg'
 		},
 		{

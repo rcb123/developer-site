@@ -31,6 +31,11 @@
 						>
 					</li>
 					<li>
+						<a href="https://hur.vercel.app/" class="hover:bg-gray-200 hover:text-black"
+							>Shortly</a
+						>
+					</li>
+					<li>
 						<a href="/projects/maze" class="hover:bg-gray-200 hover:text-black">Maze Solver</a>
 					</li>
 					<li>

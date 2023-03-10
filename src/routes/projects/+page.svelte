@@ -21,7 +21,7 @@
 			title="URL Shortener"
 			description="A URL shortening service made using TypeScript, SvelteKit, Prisma, and MongoDB. Functional but not production ready."
 			image="shortly.jpg"
-			projectPage=""
+			projectPage="https://hur.vercel.app"
 			githubLink="https://github.com/rcb123/url-shortener"
 		/>
 		<ProjectCard
@@ -41,7 +41,7 @@
 		<ProjectCard
 			title="Clicking"
 			description="A website that matches movie lovers with other people with similar tastes. Made for HackSC 2023, not fully functional."
-			image="sveltcord.jpg"
+			image="clicking.jpg"
 			projectPage="https://clicking.vercel.app"
 			githubLink="https://github.com/rcb123/HackSC-Clicking"
 		/>
