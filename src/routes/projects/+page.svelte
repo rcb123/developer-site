@@ -18,8 +18,8 @@
 			githubLink="https://github.com/rcb123/sveltype"
 		/>
 		<ProjectCard
-			title="URL Shortener"
-			description="A URL shortening service made using TypeScript, SvelteKit, Prisma, and MongoDB. Functional but not production ready."
+			title="Shortly"
+			description="A URL shortening service made using TypeScript, SvelteKit, and PostgreSQL."
 			image="shortly.jpg"
 			projectPage="https://hur.vercel.app"
 			githubLink="https://github.com/rcb123/url-shortener"
