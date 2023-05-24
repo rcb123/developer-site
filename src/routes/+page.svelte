@@ -1,6 +1,6 @@
 <script lang="ts">
 	import {
-		Introduction,
+		Hero,
 		Portfolio,
 		Skills,
 		Education,
@@ -12,7 +12,7 @@
 </script>
 
 <main>
-	<Introduction />
+	<Hero />
 	<Portfolio />
 	<Skills />
 	<!--

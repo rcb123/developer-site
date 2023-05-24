@@ -1,4 +1,4 @@
-export { default as Introduction } from './Introduction.svelte';
+export { default as Hero } from './Hero.svelte';
 export { default as Portfolio } from './Portfolio.svelte';
 export { default as Skills } from './Skills.svelte';
 export { default as Education } from './Education.svelte';
