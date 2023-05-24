@@ -74,7 +74,7 @@
 <section class="inset-0 mx-auto flex h-[90vh] max-w-6xl justify-center p-10 text-black sm:p-24">
 	{#if visible}
 		<div class="flex flex-col justify-center gap-5">
-			<div class="flex items-center justify-between" in:fade={{ duration: 1000 }}>
+			<div class="flex items-center justify-between" in:fade={{ duration: 700 }}>
 				<div class="relative w-fit">
 					<img
 						src="/images/profile.jpg"
@@ -88,7 +88,7 @@
 					{#if tooltipVisible}
 						<span
 							class="absolute top-[50%] left-[125%] z-[1] w-32 -translate-y-1/2 rounded-md bg-gray-700 p-2 text-center text-sm text-white"
-							transition:fade={{ duration: 500, easing: cubicInOut }}>{phrases[currentIndex]}</span
+							transition:fade={{ duration: 300, easing: cubicInOut }}>{phrases[currentIndex]}</span
 						>
 					{/if}
 				</div>
@@ -110,7 +110,7 @@
 				<AnimatedLetters letters={body} />
 			</p>
 
-			<p class="text-sm text-zinc-500 sm:text-base" in:fade={{ duration: 500 }}>
+			<p class="text-sm text-zinc-500 sm:text-base" in:fade={{ duration: 700 }}>
 				As a Computer Science Business Administration major with a passion for full-stack web
 				development and software engineering, I thrive on opportunities to grow and expand my
 				skillset.
@@ -124,16 +124,16 @@
 				<a href="mailto:rbanankhah@gmail.com">
 					<span
 						class="flex h-[3.5rem] w-[3.5rem] items-center justify-center rounded-full bg-blue-700/70 md:h-[4.8rem] md:w-[4.8rem] lg:h-[5.2rem] lg:w-[5.2rem] xl:h-[5.6rem] xl:w-[5.6rem] 2xl:h-[6rem] 2xl:w-[6rem]"
-						in:scale={{ duration: 700, delay: 0, easing: backInOut }}
+						in:scale={{ duration: 500, delay: 500, easing: backInOut }}
 					>
 						<span
 							class="flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-blue-700/90 md:h-[3.8rem] md:w-[3.8rem] lg:h-[4.2rem] lg:w-[4.2rem] xl:h-[4.6rem] xl:w-[4.6rem] 2xl:h-[5rem] 2xl:w-[5rem]"
-							in:scale={{ duration: 700, delay: 700, easing: backInOut }}
+							in:scale={{ duration: 500, delay: 1000, easing: backInOut }}
 						>
 							<iconify-icon
 								icon="mdi:email"
 								class="flex items-center justify-center text-center text-base text-white sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
-								in:fade={{ duration: 700, delay: 1400, easing: cubicIn }}
+								in:fade={{ duration: 400, delay: 1400, easing: cubicIn }}
 							/>
 						</span>
 					</span>
@@ -142,16 +142,16 @@
 				<a href="https://github.com/rcb123" target="_blank" rel="noreferrer">
 					<span
 						class="flex h-[3.5rem] w-[3.5rem] items-center justify-center rounded-full bg-blue-700/70 md:h-[4.8rem] md:w-[4.8rem] lg:h-[5.2rem] lg:w-[5.2rem] xl:h-[5.6rem] xl:w-[5.6rem] 2xl:h-[6rem] 2xl:w-[6rem]"
-						in:scale={{ duration: 700, delay: 0, easing: backInOut }}
+						in:scale={{ duration: 500, delay: 500, easing: backInOut }}
 					>
 						<span
 							class="flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-blue-700/90 md:h-[3.8rem] md:w-[3.8rem] lg:h-[4.2rem] lg:w-[4.2rem] xl:h-[4.6rem] xl:w-[4.6rem] 2xl:h-[5rem] 2xl:w-[5rem]"
-							in:scale={{ duration: 700, delay: 700, easing: backInOut }}
+							in:scale={{ duration: 500, delay: 1000, easing: backInOut }}
 						>
 							<iconify-icon
 								icon="mdi:github"
 								class="flex items-center justify-center text-center text-base text-white sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
-								in:fade={{ duration: 700, delay: 1400, easing: cubicIn }}
+								in:fade={{ duration: 400, delay: 1400, easing: cubicIn }}
 							/>
 						</span>
 					</span>
@@ -160,16 +160,16 @@
 				<a href="https://www.linkedin.com/in/rbanankhah/" target="_blank" rel="noreferrer">
 					<span
 						class="flex h-[3.5rem] w-[3.5rem] items-center justify-center rounded-full bg-blue-700/70 md:h-[4.8rem] md:w-[4.8rem] lg:h-[5.2rem] lg:w-[5.2rem] xl:h-[5.6rem] xl:w-[5.6rem] 2xl:h-[6rem] 2xl:w-[6rem]"
-						in:scale={{ duration: 700, delay: 0, easing: backInOut }}
+						in:scale={{ duration: 500, delay: 500, easing: backInOut }}
 					>
 						<span
 							class="flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-blue-700/90 md:h-[3.8rem] md:w-[3.8rem] lg:h-[4.2rem] lg:w-[4.2rem] xl:h-[4.6rem] xl:w-[4.6rem] 2xl:h-[5rem] 2xl:w-[5rem]"
-							in:scale={{ duration: 700, delay: 700, easing: backInOut }}
+							in:scale={{ duration: 500, delay: 1000, easing: backInOut }}
 						>
 							<iconify-icon
 								icon="mdi:linkedin"
 								class="flex items-center justify-center text-center text-base text-white sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
-								in:fade={{ duration: 700, delay: 1400, easing: cubicIn }}
+								in:fade={{ duration: 400, delay: 1400, easing: cubicIn }}
 							/>
 						</span>
 					</span>
