@@ -114,7 +114,7 @@
 				As a Computer Science Business Administration major with a passion for full-stack web
 				development and software engineering, I thrive on opportunities to grow and expand my
 				skillset.
-				<br />
+				<br /><br />
 				With expertise in C++, Python, and JavaScript, I confidently tackle projects of any scale. My
 				insatiable thirst for knowledge drives me to embrace new challenges, and I possess a unique blend
 				of technical proficiency and business acumen that adds value to any team.

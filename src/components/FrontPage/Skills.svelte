@@ -37,7 +37,7 @@
 	];
 </script>
 
-<div class="mx-auto mb-10 flex sm:max-w-4xl flex-col max-w-[23rem]">
+<div class="mx-auto mb-10 flex flex-col max-w-[80vw]">
 	<h2 class="my-4 text-3xl font-bold sm:text-4xl">My Toolkit 💻</h2>
 	<div class="flex flex-col justify-center">
 		<div class="grid grid-cols-4">
@@ -52,13 +52,5 @@
 				</div>
 			{/each}
 		</div>
-		<!-- <ul class="mx-auto mt-5 mb-14 flex list-disc flex-wrap justify-center">
-			{#each skills as skill}
-				<li class="flex w-20 list-none flex-col flex-wrap items-center p-5 text-3xl">
-					<iconify-icon icon={skill.icon} />
-					{skill.name}
-				</li>
-			{/each}
-		</ul> -->
 	</div>
 </div>
