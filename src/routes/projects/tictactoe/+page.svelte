@@ -90,7 +90,7 @@
 	}
 
 	function printTTT(): void {
-		let board: HTMLElement | null = document.getElementById('board');
+		let board: HTMLTableElement | null = document.getElementById('board') as HTMLTableElement;
 		if (!board) {
 			return;
 		}
