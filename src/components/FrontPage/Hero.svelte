@@ -121,23 +121,6 @@
 			</p>
 
 			<div class="z-10 my-14 flex w-full items-center justify-between">
-				<a href="mailto:rbanankhah@gmail.com">
-					<span
-						class="flex h-[3.5rem] w-[3.5rem] items-center justify-center rounded-full bg-blue-700/70 md:h-[4.8rem] md:w-[4.8rem] lg:h-[5.2rem] lg:w-[5.2rem] xl:h-[5.6rem] xl:w-[5.6rem] 2xl:h-[6rem] 2xl:w-[6rem]"
-						in:scale={{ duration: 500, delay: 500, easing: backInOut }}
-					>
-						<span
-							class="flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-blue-700/90 md:h-[3.8rem] md:w-[3.8rem] lg:h-[4.2rem] lg:w-[4.2rem] xl:h-[4.6rem] xl:w-[4.6rem] 2xl:h-[5rem] 2xl:w-[5rem]"
-							in:scale={{ duration: 500, delay: 1000, easing: backInOut }}
-						>
-							<iconify-icon
-								icon="mdi:email"
-								class="flex items-center justify-center text-center text-base text-white sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
-								in:fade={{ duration: 400, delay: 1400, easing: cubicIn }}
-							/>
-						</span>
-					</span>
-				</a>
 
 				<a href="https://github.com/rcb123" target="_blank" rel="noreferrer">
 					<span
@@ -174,6 +157,25 @@
 						</span>
 					</span>
 				</a>
+
+				<a href="mailto:rbanankhah@gmail.com">
+					<span
+						class="flex h-[3.5rem] w-[3.5rem] items-center justify-center rounded-full bg-blue-700/70 md:h-[4.8rem] md:w-[4.8rem] lg:h-[5.2rem] lg:w-[5.2rem] xl:h-[5.6rem] xl:w-[5.6rem] 2xl:h-[6rem] 2xl:w-[6rem]"
+						in:scale={{ duration: 500, delay: 500, easing: backInOut }}
+					>
+						<span
+							class="flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-blue-700/90 md:h-[3.8rem] md:w-[3.8rem] lg:h-[4.2rem] lg:w-[4.2rem] xl:h-[4.6rem] xl:w-[4.6rem] 2xl:h-[5rem] 2xl:w-[5rem]"
+							in:scale={{ duration: 500, delay: 1000, easing: backInOut }}
+						>
+							<iconify-icon
+								icon="mdi:email"
+								class="flex items-center justify-center text-center text-base text-white sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+								in:fade={{ duration: 400, delay: 1400, easing: cubicIn }}
+							/>
+						</span>
+					</span>
+				</a>
+				
 			</div>
 		</div>
 	{/if}
