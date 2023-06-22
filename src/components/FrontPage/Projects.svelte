@@ -49,9 +49,9 @@
 	];
 </script>
 
-<div class="w-full px-10 pb-10 sm:px-28 md:px-32 lg:px-36 xl:px-44">
+<div class="mx-auto max-w-6xl px-10 sm:px-24 pb-10 flex flex-col justify-center">
 	<h1
-		class="2xl:leading[10rem] z-40 mb-20 cursor-default text-[3.5rem] font-semibold leading-[3.5rem] sm:text-[5.2rem] sm:leading-[5.5rem] md:text-[6.4rem] md:leading-[6rem] lg:mb-32 lg:text-[7.5rem] lg:leading-[7rem] xl:text-[9.2rem] xl:leading-[9rem] 2xl:text-[10.8rem]"
+		class="2xl:leading[10rem] z-40 mb-10 cursor-default text-[2rem] font-semibold leading-[3.5rem] sm:text-[3rem] sm:leading-[5rem] md:text-[4rem] md:leading-[5.5rem] lg:mb-32 lg:text-[5rem] lg:leading-[6rem] xl:text-[6rem] xl:leading-[7rem] 2xl:text-[7rem]"
 	>
 		Featured Projects
 	</h1>
