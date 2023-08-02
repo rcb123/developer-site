@@ -6,7 +6,7 @@
 	<title>Projects | Reza Banankhah</title>
 </svelte:head>
 
-<h1 class="text-center max-sm:text-2xl md:text-3xl font-semibold mt-4 sm:mt-12">Projects</h1>
+<h1 class="text-center text-4xl font-semibold mt-10 mb-4">Projects</h1>
 
 <main class="flex items-center justify-center">
 	<div class="projects grid gap-0 sm:gap-4 text-white grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
