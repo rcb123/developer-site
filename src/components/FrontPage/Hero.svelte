@@ -71,7 +71,7 @@
 	onDestroy(() => (visible = false));
 </script>
 
-<section class="inset-0 mx-auto flex h-[90vh] max-w-6xl justify-center p-10 text-black sm:p-24">
+<section class="inset-0 mx-auto flex h-[93vh] max-w-6xl justify-center p-10 text-black sm:p-24">
 	{#if visible}
 		<div class="flex flex-col justify-center gap-5">
 			<div class="flex items-center justify-between" in:fade={{ duration: 700 }}>
@@ -92,14 +92,18 @@
 						>
 					{/if}
 				</div>
-				<div class="flex items-center justify-between space-x-2">
+				<a
+					href="mailto:rbanankhah@gmail.com"
+					class="flex items-center justify-between space-x-2"
+					transition:fade={{ duration: 700, delay: 1900 }}
+				>
 					<div class="h-0.5 w-4 bg-black sm:w-8 md:w-10" />
-					<p
+					<div
 						class="text-sm font-medium capitalize text-black transition-colors duration-300 ease-in-out hover:text-blue-600 md:text-lg xl:text-xl"
 					>
 						Available for internship
-					</p>
-				</div>
+					</div>
+				</a>
 			</div>
 
 			<h1 class="text-3xl text-black sm:text-5xl">
@@ -110,7 +114,7 @@
 				<AnimatedLetters letters={body} />
 			</p>
 
-			<p class="text-sm text-zinc-500 sm:text-base" in:fade={{ duration: 700 }}>
+			<p class="text-sm text-zinc-500 sm:text-base" in:fade={{ duration: 700, delay: 1900 }}>
 				As a Computer Science Business Administration major with a passion for full-stack web
 				development and software engineering, I thrive on opportunities to grow and expand my
 				skillset.
@@ -121,7 +125,6 @@
 			</p>
 
 			<div class="z-10 my-14 flex w-full items-center justify-between">
-
 				<a href="https://github.com/rcb123" target="_blank" rel="noreferrer">
 					<span
 						class="flex h-[3.5rem] w-[3.5rem] items-center justify-center rounded-full bg-blue-700/70 md:h-[4.8rem] md:w-[4.8rem] lg:h-[5.2rem] lg:w-[5.2rem] xl:h-[5.6rem] xl:w-[5.6rem] 2xl:h-[6rem] 2xl:w-[6rem]"
@@ -175,7 +178,6 @@
 						</span>
 					</span>
 				</a>
-				
 			</div>
 		</div>
 	{/if}
