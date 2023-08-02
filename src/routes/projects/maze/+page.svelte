@@ -8,9 +8,10 @@
 	let mazeOutput: HTMLDivElement;
 
 	function uploadMazeFile() {
+		if (!fileInput.files) return;
 		const file: File = fileInput.files[0];
 		const reader: FileReader = new FileReader();
-		reader.onload = (event) => {
+		reader.onload = () => {
 			const maze: string[][] = (reader.result as string).split('\n').map((row) => row.split(''));
 			console.log(maze);
 			const rows: number = maze.length;
@@ -79,7 +80,7 @@
 		const explored: boolean[] = Array(rows * cols).fill(false);
 		const predecessor: Array<[number, number]> = Array(rows * cols).fill([0, 0]);
 
-		// Start Queue at the starting position
+		// Start queue at the starting position
 		let queue: Array<[number, number]> = [];
 		queue.push(start);
 
