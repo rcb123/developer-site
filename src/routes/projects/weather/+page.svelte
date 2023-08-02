@@ -66,94 +66,92 @@
 	}
 </script>
 
-<div
-	class="layout grid h-full items-center p-8"
-	style:background-image="url(../images/weather/backgrounds/{weather}.jpeg)"
->
-	<nav>
-		<img src="../images/weather/icons/{iconID}.png" alt={weather} />
-		<h1 class="mt-[-1rem] mb-8 text-7xl tracking-wider text-base-100">weather</h1>
-	</nav>
+<section class="inset-0 mx-auto flex justify-center w-[100vw] h-[93vh]">
+	<div
+		class="card shadow-2xl shadow-gray-600 w-[80vw] h-fit my-auto p-8 bg-cover"
+		style:background-image="url(../images/weather/backgrounds/{weather}.jpeg)"
+	>
+		<nav>
+			<img src="../images/weather/icons/{iconID}.png" alt={weather} />
+			<h1 class="mt-[-1rem] mb-8 text-7xl tracking-wider text-base-100">weather</h1>
+		</nav>
 
-	<main>
-		<label>
-			How to choose a location:
-			<select bind:value={selected}>
-				<option value="coordinates"> By latitude and longitude </option>
-				<option value="city"> By city and state </option>
-				<option value="zipcode"> By zipcode </option>
-			</select>
-		</label>
+		<main>
+			<label class="flex flex-row">
+				<p class="pr-1">Location Selection:</p>
+				<select bind:value={selected}>
+					<option value="coordinates"> By latitude and longitude </option>
+					<option value="city"> By city and state </option>
+					<option value="zipcode"> By zipcode </option>
+				</select>
+			</label>
 
-		<div class="weather">
-			{#if selected === 'coordinates'}
-				<form on:submit|preventDefault={getWeather}>
-					<label>
-						Latitude: <br />
-						<input type="text" bind:value={lat} required />
-					</label>
-					<br />
-					<label>
-						Longitude: <br />
-						<input type="text" bind:value={lng} required />
-					</label>
-					<br />
-					<button type="submit">Get Weather</button>
-					<button type="button" on:click={useLocation} style:margin-left="1rem"
-						>Get Current Location</button
-					>
-				</form>
-			{:else if selected === 'city'}
-				<form on:submit|preventDefault={getCityCoordinates}>
-					<label>
-						City: <br />
-						<input type="text" bind:value={city} required />
-					</label>
-					<br />
-					<label>
-						State: <br />
-						<input type="text" bind:value={state} required />
-					</label>
-					<br />
-					<button type="submit">Get Weather</button>
-					<button type="button" on:click={useLocation} style:margin-left="1rem"
-						>Get Current Location</button
-					>
-				</form>
-			{:else if selected === 'zipcode'}
-				<form on:submit|preventDefault={getZipcodeCoordinates}>
-					<label>
-						Zipcode: <br />
-						<input type="text" bind:value={zipcode} style:margin-bottom="5.64rem" required />
-					</label>
-					<br />
-					<button type="submit" class="bg-gradient-to-r from-cyan-500 to-blue-500" >Get Weather</button>
-					<button type="button" on:click={useLocation} style:margin-left="1rem" class="bg-gradient-to-r from-cyan-500 to-blue-500"
-						>Get Current Location</button
-					>
-				</form>
-			{/if}
-		</div>
-	</main>
-</div>
-
-<div class="layout results grid h-full items-center p-8">
-	{#if temperature}
-		<p>Temperature: {temperature}°F</p>
-		<p>Feels Like: {feelsLike}°F</p>
-		<p>Weather conditions: {weatherDesc}</p>
-	{/if}
-</div>
+			<div class="weather">
+				{#if selected === 'coordinates'}
+					<form on:submit|preventDefault={getWeather}>
+						<label>
+							Latitude: <br />
+							<input type="text" bind:value={lat} required />
+						</label>
+						<br />
+						<label>
+							Longitude: <br />
+							<input type="text" bind:value={lng} required />
+						</label>
+						<br />
+						<button type="submit">Get Weather</button>
+						<button type="button" on:click={useLocation} style:margin-left="1rem"
+							>Get Current Location</button
+						>
+					</form>
+				{:else if selected === 'city'}
+					<form on:submit|preventDefault={getCityCoordinates}>
+						<label>
+							City: <br />
+							<input type="text" bind:value={city} required />
+						</label>
+						<br />
+						<label>
+							State: <br />
+							<input type="text" bind:value={state} required />
+						</label>
+						<br />
+						<button type="submit">Get Weather</button>
+						<button type="button" on:click={useLocation} style:margin-left="1rem"
+							>Get Current Location</button
+						>
+					</form>
+				{:else if selected === 'zipcode'}
+					<form on:submit|preventDefault={getZipcodeCoordinates}>
+						<label>
+							Zipcode: <br />
+							<input type="text" bind:value={zipcode} style:margin-bottom="5.64rem" required />
+						</label>
+						<br />
+						<button type="submit" class="bg-gradient-to-r from-cyan-500 to-blue-500"
+							>Get Weather</button
+						>
+						<button
+							type="button"
+							on:click={useLocation}
+							style:margin-left="1rem"
+							class="bg-gradient-to-r from-cyan-500 to-blue-500">Get Current Location</button
+						>
+					</form>
+				{/if}
+			</div>
+			<div class="h-full items-center p-8">
+				{#if temperature}
+					<p>Temperature: {temperature}°F</p>
+					<p>Feels Like: {feelsLike}°F</p>
+					<p>Weather conditions: {weatherDesc}</p>
+				{/if}
+			</div>
+		</main>
+	</div>
+</section>
 
 <style lang="scss">
-	.layout {
-		grid-template-rows: auto 1fr;
-
-		background-position: center top;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
 	button {
 		border: none;
 		border-radius: 0.6rem;
