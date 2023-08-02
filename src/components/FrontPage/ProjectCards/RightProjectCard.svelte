@@ -7,12 +7,16 @@
 </script>
 
 <div
-	class="container flex flex-col items-start lg:flex-row lg:items-center lg:justify-between lg:space-x-2"
+	class="container flex flex-col items-start lg:flex-row lg:items-center lg:justify-between lg:space-x-[5vw]"
 >
 	<div
 		class="relative h-[250px] w-full overflow-hidden sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] 2xl:h-[500px]"
 	>
-		<img src={image} alt="project" class="absolute h-full w-full object-cover will-change-transform" />
+		<img
+			src={image}
+			alt="project"
+			class="absolute h-full w-full object-cover will-change-transform"
+		/>
 		<div class="absolute top-0 right-0 h-full w-full" />
 	</div>
 

@@ -49,19 +49,19 @@
 	];
 </script>
 
-<div class="mx-auto max-w-6xl px-10 sm:px-24 pb-10 flex flex-col justify-center">
+<div class="mx-auto flex max-w-6xl flex-col justify-center px-10 pb-10 sm:px-24">
 	<h1
-		class="2xl:leading[10rem] z-40 mb-10 cursor-default text-[2rem] font-semibold leading-[3.5rem] sm:text-[3rem] sm:leading-[5rem] md:text-[4rem] md:leading-[5.5rem] lg:mb-32 lg:text-[5rem] lg:leading-[6rem] xl:text-[6rem] xl:leading-[7rem] 2xl:text-[7rem]"
+		class="z-40 mb-10 cursor-default text-[2rem] font-semibold leading-[3.5rem] sm:text-[3rem] sm:leading-[5rem] md:text-[4rem] md:leading-[5.5rem]"
 	>
 		Featured Projects
 	</h1>
 
-	<div class="z-30 space-y-32 sm:space-y-40 xl:space-y-[35vh]">
+	<div class="z-30 space-y-[10vh]">
 		{#each projects as { name, description, githubLink, demoLink, image }, index}
 			{#if index % 2 === 0}
-				<RightProjectCard {name} {description} {githubLink} {demoLink} {image} />
-			{:else}
 				<LeftProjectCard {name} {description} {githubLink} {demoLink} {image} />
+			{:else}
+				<RightProjectCard {name} {description} {githubLink} {demoLink} {image} />
 			{/if}
 		{/each}
 	</div>
