@@ -5,6 +5,8 @@
 	let dim = 3;
 	let turn: string = 'X';
 
+	let gameState: 'In Progress' | 'Finished' | 'Draw' = 'In Progress';
+
 	let inputEl: HTMLInputElement;
 
 	// Gets value at the row and column provided
@@ -101,16 +103,22 @@
 				let cell = row.insertCell();
 				let idx = i * dim + j;
 				cell.innerHTML = grid[idx];
+				cell.className = 'w-16 h-16 text-center border-2 border-solid border-gray-300';
 				cell.addEventListener('click', () => {
+					if (gameState !== 'In Progress') {
+						return;
+					}
 					if (grid[idx] === '?') {
 						grid[idx] = turn;
 						cell.innerHTML = turn;
 						if (checkForWinner()) {
 							alert(turn + ' wins!');
+							gameState = 'Finished';
 							turn = 'X';
 							printTTT();
 						} else if (checkForDraw()) {
 							alert("It's a draw!");
+							gameState = 'Draw';
 							turn = 'X';
 							printTTT();
 						} else {
@@ -124,6 +132,7 @@
 
 	function restart(): void {
 		grid = new Array(dim * dim).fill('?');
+		gameState = 'In Progress';
 		turn = 'X';
 		printTTT();
 	}
@@ -133,6 +142,7 @@
 		console.log(size);
 		grid = new Array(size * size).fill('?');
 		dim = size;
+		gameState = 'In Progress';
 		printTTT();
 	}
 
