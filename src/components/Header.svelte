@@ -3,7 +3,7 @@
 	import 'iconify-icon';
 </script>
 
-<header class="navbar h-[10vh] border-b bg-base-100">
+<header class="navbar h-[7vh] border-b bg-base-100">
 	<div class="navbar-start">
 		<a href="/" class="btn-ghost btn text-xl normal-case hover:bg-gray-200 hover:text-black">
 			<iconify-icon icon="mdi:code-braces" class="mr-2 text-4xl" />
@@ -11,7 +11,7 @@
 		</a>
 	</div>
 	<nav class="navbar-center hidden lg:flex">
-		<ul class="menu menu-horizontal px-1">
+		<ul class="menu menu-horizontal">
 			<li>
 				<a href="/projects" class="btn-ghost btn hover:bg-gray-200 hover:text-black">
 					Projects
