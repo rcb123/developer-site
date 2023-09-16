@@ -5,39 +5,39 @@
 
 	let projects = [
 		{
+			name: 'Knots',
+			description: 'A full-stack social media platform built with SvelteKit, Supabase, TypeScript, Tailwind, and Zod.',
+			githubLink: 'https://github.com/rcb123/knots',
+			demoLink: 'https://knots-rb.vercel.app/',
+			image: '/images/knots.png'
+		},
+		{
 			name: 'Sveltype',
 			description: 'A typing game based on Monkeytype.',
 			githubLink: 'https://github.com/rcb123/sveltype',
 			demoLink: 'https://reza-sveltype.vercel.app/',
-			image: '/images/sveltype.jpg'
+			image: '/images/sveltype.png'
 		},
 		{
 			name: 'Shortly',
 			description: 'A URL shortening service with CRUD functionality.',
 			githubLink: 'https://github.com/rcb123/url-shortener',
 			demoLink: 'https://hur.vercel.app',
-			image: '/images/shortly.jpg'
+			image: '/images/shortly.png'
 		},
 		{
-			name: 'Sveltcord',
-			description: 'A real-time chat app based on Discord.',
-			githubLink: 'https://github.com/rcb123/sveltcord',
-			demoLink: '/',
-			image: '/images/sveltcord.jpg'
-		},
-		{
-			name: 'Maze Solver',
+			name: 'Maze BFS',
 			description: 'An ASCII BFS maze solver.',
 			githubLink: 'https://github.com/rcb123/maze-solver-web',
 			demoLink: '/projects/maze',
-			image: '/images/maze.jpg'
+			image: '/images/maze.png'
 		},
 		{
 			name: 'Tic Tac Toe',
 			description: 'A resizable Tic Tac Toe game',
 			githubLink: 'https://github.com/rcb123/nxn-tic-tac-toe',
 			demoLink: '/projects/tictactoe',
-			image: '/images/tictactoe.jpg'
+			image: '/images/tictactoe.png'
 		},
 		{
 			name: 'Video to MP3',
@@ -57,7 +57,7 @@
 	</h1>
 
 	<div class="z-30 space-y-[10vh]">
-		{#each projects as { name, description, githubLink, demoLink, image }, index}
+		{#each projects as { name, description, githubLink, demoLink, image }, index (index)}
 			{#if index % 2 === 0}
 				<LeftProjectCard {name} {description} {githubLink} {demoLink} {image} />
 			{:else}

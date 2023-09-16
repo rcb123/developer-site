@@ -53,7 +53,7 @@
 		<img
 			src={image}
 			alt="project"
-			class="absolute h-full w-full object-cover will-change-transform"
+			class="absolute h-full w-full object-contain will-change-transform"
 		/>
 		<div class="absolute top-0 left-0 h-full w-full" />
 	</div>
