@@ -5,8 +5,17 @@
 
 	let projects = [
 		{
+			name: 'Activ',
+			description:
+				'A social media fitness platform built for gym enthusiasts using Flutter and Supabase.',
+			githubLink: '',
+			demoLink: '',
+			image: '/images/activ.png'
+		},
+		{
 			name: 'Knots',
-			description: 'A full-stack social media platform built with SvelteKit, Supabase, TypeScript, Tailwind, and Zod.',
+			description:
+				'A full-stack social media platform built with SvelteKit, Supabase, TypeScript, Tailwind, and Zod.',
 			githubLink: 'https://github.com/rcb123/knots',
 			demoLink: 'https://knots-rb.vercel.app/',
 			image: '/images/knots.png'
