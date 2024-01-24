@@ -17,7 +17,7 @@
 			alt="project"
 			class="absolute h-full w-full object-contain will-change-transform"
 		/>
-		<div class="absolute top-0 right-0 h-full w-full" />
+		<div class="absolute right-0 top-0 h-full w-full" />
 	</div>
 
 	<div class="space-y-2 sm:space-y-3 md:space-y-3 lg:space-y-4">
@@ -30,16 +30,18 @@
 			{description}
 		</p>
 		<div class="flex items-center justify-start space-x-6 lg:justify-end">
-			<div>
-				<a href={githubLink} target="_blank" rel="noreferrer">
-					<iconify-icon
-						icon="mdi:github"
-						height="none"
-						width="none"
-						class="h-5 w-5 transition duration-200 ease-in-out hover:-translate-y-1 sm:h-7 sm:w-7 lg:h-8 lg:w-8 2xl:h-9 2xl:w-9"
-					/>
-				</a>
-			</div>
+			{#if githubLink !== '/' && githubLink !== ''}
+				<div>
+					<a href={githubLink} target="_blank" rel="noreferrer">
+						<iconify-icon
+							icon="mdi:github"
+							height="none"
+							width="none"
+							class="h-5 w-5 transition duration-200 ease-in-out hover:-translate-y-1 sm:h-7 sm:w-7 lg:h-8 lg:w-8 2xl:h-9 2xl:w-9"
+						/>
+					</a>
+				</div>
+			{/if}
 			{#if demoLink !== '/'}
 				<div>
 					<!-- Live Demo Button -->

@@ -8,8 +8,8 @@
 			name: 'Activ',
 			description:
 				'A social media fitness platform built for gym enthusiasts using Flutter and Supabase.',
-			githubLink: '',
-			demoLink: '',
+			githubLink: '/',
+			demoLink: '/',
 			image: '/images/activ.png'
 		},
 		{
