@@ -45,10 +45,6 @@
 				</ul>
 			</li>
 			<li><a href="/resume" class="btn-ghost btn hover:bg-gray-200 hover:text-black">Resume</a></li>
-			<li><a href="/about" class="btn-ghost btn hover:bg-gray-200 hover:text-black">About</a></li>
-			<li>
-				<a href="/contact" class="btn-ghost btn hover:bg-gray-200 hover:text-black">Contact</a>
-			</li>
 		</ul>
 	</nav>
 	<div class="navbar-end">
@@ -89,8 +85,6 @@
 					<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 					<li><a href="/projects" class="hover:bg-gray-200">Projects</a></li>
 					<li><a href="/resume" class="hover:bg-gray-200">Resume</a></li>
-					<li><a href="/about" class="hover:bg-gray-200">About</a></li>
-					<li><a href="/contact" class="hover:bg-gray-200">Contact</a></li>
 				</ul>
 			</nav>
 		</div>

@@ -75,7 +75,7 @@
 		/>
 		<ProjectCard
 			title="Developer Portfolio"
-			description="My personal website! It showcases my skills and projects, as well as provides a little bit of information about me. I used SvelteKit, HTML, CSS, and JavaScript to create a responsive and visually appealing design."
+			description="My personal website! It showcases my skills and projects, as well as provides a little bit of information about me. I used SvelteKit, HTML, CSS, and TypeScript to create a responsive and visually appealing design."
 			image="portfolio.png"
 			projectPage="/"
 			githubLink="https://github.com/rcb123/developer-site"

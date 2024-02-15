@@ -27,34 +27,34 @@
 			demoLink: 'https://reza-sveltype.vercel.app/',
 			image: '/images/sveltype.png'
 		},
-		{
-			name: 'Shortly',
-			description: 'A URL shortening service with CRUD functionality.',
-			githubLink: 'https://github.com/rcb123/url-shortener',
-			demoLink: 'https://hur.vercel.app',
-			image: '/images/shortly.png'
-		},
-		{
-			name: 'Maze BFS',
-			description: 'An ASCII BFS maze solver.',
-			githubLink: 'https://github.com/rcb123/maze-solver-web',
-			demoLink: '/projects/maze',
-			image: '/images/maze.png'
-		},
-		{
-			name: 'Tic Tac Toe',
-			description: 'A resizable Tic Tac Toe game',
-			githubLink: 'https://github.com/rcb123/nxn-tic-tac-toe',
-			demoLink: '/projects/tictactoe',
-			image: '/images/tictactoe.png'
-		},
-		{
-			name: 'Video to MP3',
-			description: 'A microservice-based video to MP3 converter.',
-			githubLink: 'https://github.com/rcb123/video-mp3-converter',
-			demoLink: '/',
-			image: '/images/videomp3.jpg'
-		}
+		// {
+		// 	name: 'Shortly',
+		// 	description: 'A URL shortening service with CRUD functionality.',
+		// 	githubLink: 'https://github.com/rcb123/url-shortener',
+		// 	demoLink: 'https://hur.vercel.app',
+		// 	image: '/images/shortly.png'
+		// },
+		// {
+		// 	name: 'Maze BFS',
+		// 	description: 'An ASCII BFS maze solver.',
+		// 	githubLink: 'https://github.com/rcb123/maze-solver-web',
+		// 	demoLink: '/projects/maze',
+		// 	image: '/images/maze.png'
+		// },
+		// {
+		// 	name: 'Tic Tac Toe',
+		// 	description: 'A resizable Tic Tac Toe game',
+		// 	githubLink: 'https://github.com/rcb123/nxn-tic-tac-toe',
+		// 	demoLink: '/projects/tictactoe',
+		// 	image: '/images/tictactoe.png'
+		// },
+		// {
+		// 	name: 'Video to MP3',
+		// 	description: 'A microservice-based video to MP3 converter.',
+		// 	githubLink: 'https://github.com/rcb123/video-mp3-converter',
+		// 	demoLink: '/',
+		// 	image: '/images/videomp3.jpg'
+		// }
 	];
 </script>
 
