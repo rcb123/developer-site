@@ -37,9 +37,11 @@
 		"Congratulations, you're officially addicted to clicking"
 	];
 
-	const title = ['Hello!', "I'm", 'Reza'];
+	const title = ['Hi,', "I'm", 'Reza', 'Banankhah'];
 
-	const body = ["I'm", 'developing', 'Creative', '&', 'Interactive', 'webapps', '🚀'];
+	const body1 = ['Passionate', 'Software', 'Engineer,', 'AI', 'Enthusiast,'];
+
+	const body2 = ['&', 'Aspiring', 'Tech', 'Innovator.'];
 
 	let currentIndex = 0;
 
@@ -76,18 +78,16 @@
 		<div class="flex flex-col justify-center gap-5">
 			<div class="flex items-center justify-between" in:fade={{ duration: 700 }}>
 				<div class="relative w-fit">
-					<img
-						src="/images/profile.jpg"
-						alt=""
-						on:click={handleClick}
-						on:keydown
-						on:mouseenter={showTooltip}
-						on:mouseleave={hideTooltip}
-						class="!z-10 h-24 w-24 cursor-pointer rounded-full transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-sm sm:h-32 sm:w-32"
-					/>
+					<button on:click={handleClick} on:mouseenter={showTooltip} on:mouseleave={hideTooltip}>
+						<img
+							src="/images/profile.jpg"
+							alt=""
+							class="!z-10 h-24 w-24 cursor-pointer rounded-full transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-sm sm:h-32 sm:w-32"
+						/>
+					</button>
 					{#if tooltipVisible}
 						<span
-							class="absolute top-[50%] left-[125%] z-[1] w-32 -translate-y-1/2 rounded-md bg-gray-700 p-2 text-center text-sm text-white"
+							class="absolute left-[125%] top-[50%] z-[1] w-32 -translate-y-1/2 rounded-md bg-gray-700 p-2 text-center text-sm text-white"
 							transition:fade={{ duration: 300, easing: cubicInOut }}>{phrases[currentIndex]}</span
 						>
 					{/if}
@@ -95,7 +95,7 @@
 				<a
 					href="mailto:rbanankhah@gmail.com"
 					class="flex items-center justify-between space-x-2"
-					transition:fade={{ duration: 700, delay: 1900 }}
+					transition:fade={{ duration: 500, delay: 1900 }}
 				>
 					<div class="h-0.5 w-4 bg-black sm:w-8 md:w-10" />
 					<div
@@ -106,22 +106,20 @@
 				</a>
 			</div>
 
-			<h1 class="text-3xl text-black sm:text-5xl">
+			<h1 class="text-2xl text-black sm:text-5xl">
 				<AnimatedLetters letters={title} />
 			</h1>
 
 			<p class="text-xl sm:text-3xl">
-				<AnimatedLetters letters={body} />
+				<AnimatedLetters letters={body1} />
+				<br />
+				<AnimatedLetters letters={body2} />
 			</p>
 
-			<p class="text-sm text-zinc-500 sm:text-base" in:fade={{ duration: 700, delay: 1900 }}>
-				As a Computer Science Business Administration major with a passion for full-stack web
-				development and software engineering, I thrive on opportunities to grow and expand my
-				skillset.
-				<br /><br />
-				With expertise in C++, Python, and JavaScript, I confidently tackle projects of any scale. My
-				insatiable thirst for knowledge drives me to embrace new challenges, and I possess a unique blend
-				of technical proficiency and business acumen that adds value to any team.
+			<p class="text-base text-zinc-500 sm:text-xl" in:fade={{ duration: 500, delay: 1900 }}>
+				Merging my love for software development with an excitement for AI exploration, I approach
+				each project ready to learn and innovate, driven by the belief that technology can create a
+				better future.
 			</p>
 
 			<div class="z-10 my-14 flex w-full items-center justify-between">
